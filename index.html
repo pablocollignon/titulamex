@@ -22,9 +22,9 @@ body{font-family:'DM Sans',sans-serif;color:var(--body);background:var(--white);
 
 nav{background:var(--navy);padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:72px;position:sticky;top:0;z-index:100;}
 .logo-wrap{display:flex;align-items:center;gap:14px;cursor:pointer;}
-.logo-img{width:42px;height:42px;object-fit:contain;display:block;}
-.logo-name{font-family:'Cormorant Garamond',serif;font-size:26px;color:#fff;letter-spacing:4px;line-height:1;font-weight:700;}
-.logo-sub{font-size:9px;color:var(--light);letter-spacing:3px;text-transform:uppercase;display:block;margin-top:3px;}
+.logo-img{width:58px;height:58px;object-fit:contain;display:block;}
+.logo-name{font-family:'Cormorant Garamond',serif;font-size:34px;color:#fff;letter-spacing:4px;line-height:1;font-weight:700;}
+.logo-sub{font-size:10px;color:rgba(133,183,235,0.75);letter-spacing:2.5px;text-transform:uppercase;display:block;margin-top:4px;font-weight:400;}
 .nav-links{display:flex;gap:22px;align-items:center;}
 .nav-links a{color:#B5D4F4;font-size:13px;font-weight:400;text-decoration:none;transition:color .2s;}
 .nav-links a:hover{color:#fff;}
@@ -195,9 +195,11 @@ nav{background:var(--navy);padding:0 5%;display:flex;align-items:center;justify-
 .trust-sec{background:#F7FAFD;padding:56px 5%;border-top:1px solid var(--pale2);border-bottom:1px solid var(--pale2);}
 .trust-in{max-width:900px;margin:0 auto;text-align:center;}
 .trust-h{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--mid);font-weight:600;margin-bottom:12px;}
-.trust-title{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--navy);font-weight:600;margin-bottom:28px;}
-.trust-items{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:24px;}
-.trust-item-box{text-align:center;padding:0 10px;}
+.trust-title{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--navy);font-weight:600;margin-bottom:32px;}
+.trust-items{display:flex;justify-content:center;align-items:flex-start;gap:0;margin-top:0;}
+.trust-item-box{flex:1;text-align:center;padding:24px 28px;border-right:1px solid var(--pale2);}
+.trust-item-box:last-child{border-right:none;}
+.trust-icon{font-size:22px;margin-bottom:10px;}
 .trust-item-title{font-size:13px;color:var(--navy);font-weight:600;margin-bottom:6px;}
 .trust-item-desc{font-size:12px;color:#5A7A96;line-height:1.6;font-weight:400;}
 
@@ -209,8 +211,8 @@ nav{background:var(--navy);padding:0 5%;display:flex;align-items:center;justify-
 
 footer{background:var(--navy);padding:48px 5% 32px;text-align:center;}
 .ft-logo{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:8px;}
-.ft-logo img{width:38px;height:38px;object-fit:contain;}
-.ft-brand{font-family:'Cormorant Garamond',serif;font-size:28px;color:#fff;font-weight:700;letter-spacing:4px;}
+.ft-logo img{width:56px;height:56px;object-fit:contain;}
+.ft-brand{font-family:'Cormorant Garamond',serif;font-size:40px;color:#fff;font-weight:700;letter-spacing:4px;}
 .ft-sub{color:#85B7EB;margin-bottom:12px;font-size:11px;letter-spacing:3px;text-transform:uppercase;}
 footer p{color:#85B7EB;font-size:12px;}
 .ft-contact{color:#D6E9F5;font-size:13px;margin:14px 0 18px;}
@@ -218,8 +220,11 @@ footer p{color:#85B7EB;font-size:12px;}
 
 @media(max-width:720px){
   nav{padding:0 4%;}
-  .logo-name{font-size:22px;letter-spacing:3px;}
-  .stats-grid,.ben-grid,.steps-row,.svc-grid,.trust-items{grid-template-columns:1fr 1fr;}
+  .logo-name{font-size:28px;letter-spacing:3px;}
+  .stats-grid,.ben-grid,.steps-row,.svc-grid{grid-template-columns:1fr 1fr;}
+  .trust-items{flex-direction:column;}
+  .trust-item-box{border-right:none;border-bottom:1px solid var(--pale2);}
+  .trust-item-box:last-child{border-bottom:none;}
   .why-grid,.caso-box,.cs-row,.frow,.phone-wrap{grid-template-columns:1fr;}
   .nav-links{display:none;}
   .caso-box{padding:28px;}
@@ -606,18 +611,21 @@ footer p{color:#85B7EB;font-size:12px;}
     <p class="trust-title en-only">We operate under Mexican legal framework</p>
     <div class="trust-items">
       <div class="trust-item-box">
+        <div class="trust-icon">⚖️</div>
         <div class="trust-item-title es-only">Tercero neutral</div>
         <div class="trust-item-title en-only">Neutral third party</div>
         <div class="trust-item-desc es-only">Custodios independientes. No representamos a ninguna de las partes ni arbitramos disputas.</div>
         <div class="trust-item-desc en-only">Independent custodians. We do not represent any party nor arbitrate disputes.</div>
       </div>
       <div class="trust-item-box">
+        <div class="trust-icon">🔐</div>
         <div class="trust-item-title es-only">Cumplimiento PLD / KYC</div>
         <div class="trust-item-title en-only">AML / KYC compliance</div>
         <div class="trust-item-desc es-only">Identificación obligatoria de clientes conforme a la LFPIORPI y reglas del SAT/UIF.</div>
         <div class="trust-item-desc en-only">Mandatory client identification per Mexican AML law and SAT/UIF rules.</div>
       </div>
       <div class="trust-item-box">
+        <div class="trust-icon">📜</div>
         <div class="trust-item-title es-only">Código de Comercio</div>
         <div class="trust-item-title en-only">Commercial Code</div>
         <div class="trust-item-desc es-only">Artículos 273 a 308 — contabilidad estricta de fondos de terceros y cumplimiento de instrucciones.</div>
@@ -689,32 +697,13 @@ footer p{color:#85B7EB;font-size:12px;}
 
       <div class="fg">
         <label><span class="es-only">Tipo de operación</span><span class="en-only">Transaction type</span><span class="req">*</span></label>
-        <select name="Tipo_Operacion" required>
-          <option value="" class="es-only">-- Selecciona --</option>
-          <option value="" class="en-only">-- Select --</option>
-          <option value="Compraventa inmobiliaria" class="es-only">Compraventa inmobiliaria</option>
-          <option value="Real estate transaction" class="en-only">Real estate transaction</option>
-          <option value="Comprador extranjero" class="es-only">Comprador extranjero</option>
-          <option value="Foreign buyer" class="en-only">Foreign buyer</option>
-          <option value="Consulta general" class="es-only">Consulta general</option>
-          <option value="General inquiry" class="en-only">General inquiry</option>
+        <select name="Tipo_Operacion" id="sel-tipo" required>
         </select>
       </div>
 
       <div class="fg">
         <label><span class="es-only">¿Cómo nos conociste?</span><span class="en-only">How did you hear about us?</span><span class="req">*</span></label>
         <select id="src-sel" name="Fuente" onchange="toggleSrc()" required>
-          <option value="" class="es-only">-- Selecciona una opción --</option>
-          <option value="" class="en-only">-- Select an option --</option>
-          <option value="Agencia/broker" class="es-only">Agencia / broker inmobiliario</option>
-          <option value="Agency/broker" class="en-only">Agency / real estate broker</option>
-          <option value="Instagram">Instagram</option>
-          <option value="Google">Google</option>
-          <option value="Recomendacion" class="es-only">Recomendación personal</option>
-          <option value="Referral" class="en-only">Personal referral</option>
-          <option value="LinkedIn">LinkedIn</option>
-          <option value="Otro" class="es-only">Otro</option>
-          <option value="Other" class="en-only">Other</option>
         </select>
       </div>
       <div class="fg" id="src-name-row" style="display:none">
@@ -877,70 +866,134 @@ footer p{color:#85B7EB;font-size:12px;}
   </div>
   <p class="ft-sub"><span class="es-only">Servicio de escrow · México</span><span class="en-only">Escrow service · Mexico</span></p>
   <p class="ft-contact"><a href="mailto:info@titulamex.com">info@titulamex.com</a></p>
-  <p>© 2025 Titulamex. <span class="es-only">Todos los derechos reservados.</span><span class="en-only">All rights reserved.</span></p>
+  <p>© 2026 Titulamex. <span class="es-only">Todos los derechos reservados.</span><span class="en-only">All rights reserved.</span></p>
 </footer>
 
 </div>
 
 <script>
-function setLang(l){
-  document.getElementById("root").setAttribute("data-lang", l);
-  document.documentElement.setAttribute("lang", l);
-  document.querySelectorAll(".lang-btn").forEach(function(b){
-    b.classList.toggle("active", b.textContent.toLowerCase() === l);
+var OPTS = {
+  tipo: {
+    es: [
+      {v:'', l:'-- Selecciona --'},
+      {v:'Compraventa inmobiliaria', l:'Compraventa inmobiliaria'},
+      {v:'Comprador extranjero', l:'Comprador extranjero'},
+      {v:'Consulta general', l:'Consulta general'}
+    ],
+    en: [
+      {v:'', l:'-- Select --'},
+      {v:'Real estate transaction', l:'Real estate transaction'},
+      {v:'Foreign buyer', l:'Foreign buyer'},
+      {v:'General inquiry', l:'General inquiry'}
+    ]
+  },
+  fuente: {
+    es: [
+      {v:'', l:'-- Selecciona una opción --'},
+      {v:'Agencia/broker', l:'Agencia / broker inmobiliario'},
+      {v:'Instagram', l:'Instagram'},
+      {v:'Google', l:'Google'},
+      {v:'Recomendacion', l:'Recomendación personal'},
+      {v:'LinkedIn', l:'LinkedIn'},
+      {v:'Otro', l:'Otro'}
+    ],
+    en: [
+      {v:'', l:'-- Select an option --'},
+      {v:'Agency/broker', l:'Agency / real estate broker'},
+      {v:'Instagram', l:'Instagram'},
+      {v:'Google', l:'Google'},
+      {v:'Referral', l:'Personal referral'},
+      {v:'LinkedIn', l:'LinkedIn'},
+      {v:'Other', l:'Other'}
+    ]
+  }
+};
+
+function rebuildSelects(lang){
+  var selTipo = document.getElementById('sel-tipo');
+  var selFuente = document.getElementById('src-sel');
+  var tipoOpts = OPTS.tipo[lang];
+  var fuenteOpts = OPTS.fuente[lang];
+
+  selTipo.innerHTML = '';
+  tipoOpts.forEach(function(o){
+    var opt = document.createElement('option');
+    opt.value = o.v;
+    opt.textContent = o.l;
+    selTipo.appendChild(opt);
   });
+
+  selFuente.innerHTML = '';
+  fuenteOpts.forEach(function(o){
+    var opt = document.createElement('option');
+    opt.value = o.v;
+    opt.textContent = o.l;
+    selFuente.appendChild(opt);
+  });
+
   toggleSrc();
+}
+
+function setLang(l){
+  document.getElementById('root').setAttribute('data-lang', l);
+  document.documentElement.setAttribute('lang', l);
+  document.querySelectorAll('.lang-btn').forEach(function(b){
+    b.classList.toggle('active', b.textContent.toLowerCase() === l);
+  });
+  rebuildSelects(l);
   updatePhoneHelp();
 }
 
 function toggleSrc(){
-  var v = document.getElementById("src-sel").value;
-  var isAgency = v === "Agencia/broker" || v === "Agency/broker";
-  var isOther = v === "Otro" || v === "Other";
-  document.getElementById("src-name-row").style.display = isAgency ? "flex" : "none";
-  document.getElementById("src-other-row").style.display = isOther ? "flex" : "none";
+  var v = document.getElementById('src-sel').value;
+  var isAgency = v === 'Agencia/broker' || v === 'Agency/broker';
+  var isOther = v === 'Otro' || v === 'Other';
+  document.getElementById('src-name-row').style.display = isAgency ? 'flex' : 'none';
+  document.getElementById('src-other-row').style.display = isOther ? 'flex' : 'none';
 }
 
 function toggleFaq(el){
-  el.classList.toggle("open");
+  el.classList.toggle('open');
 }
 
 function scrollToTop(){
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function updatePhoneHelp(){
-  var sel = document.getElementById("country-code");
+  var sel = document.getElementById('country-code');
   var opt = sel.options[sel.selectedIndex];
-  var len = opt.getAttribute("data-len") || "10";
-  var helpEs = document.getElementById("phone-help");
-  var lang = document.getElementById("root").getAttribute("data-lang");
-  var phoneInput = document.getElementById("phone-input");
-  phoneInput.setAttribute("maxlength", len);
-  if(lang === "es"){
-    helpEs.textContent = len + " dígitos · Sólo números";
+  var len = opt.getAttribute('data-len') || '10';
+  var helpEl = document.getElementById('phone-help');
+  var lang = document.getElementById('root').getAttribute('data-lang');
+  var phoneInput = document.getElementById('phone-input');
+  phoneInput.setAttribute('maxlength', len);
+  if(helpEl){
+    helpEl.textContent = lang === 'es'
+      ? len + ' dígitos · Sólo números'
+      : len + ' digits · Numbers only';
   }
 }
 
-document.getElementById("country-code").addEventListener("change", updatePhoneHelp);
+document.getElementById('country-code').addEventListener('change', updatePhoneHelp);
 
-document.getElementById("phone-input").addEventListener("input", function(e){
-  this.value = this.value.replace(/[^0-9]/g, "");
+document.getElementById('phone-input').addEventListener('input', function(){
+  this.value = this.value.replace(/[^0-9]/g, '');
 });
-document.getElementById("phone-input").addEventListener("keypress", function(e){
-  if(!/[0-9]/.test(e.key) && e.key !== "Backspace" && e.key !== "Delete" && e.key !== "Tab"){
+document.getElementById('phone-input').addEventListener('keypress', function(e){
+  if(!/[0-9]/.test(e.key) && !['Backspace','Delete','Tab','ArrowLeft','ArrowRight'].includes(e.key)){
     e.preventDefault();
   }
 });
 
-document.getElementById("contact-form").addEventListener("submit", function(e){
+document.getElementById('contact-form').addEventListener('submit', function(e){
   var form = e.target;
-  var lang = document.getElementById("root").getAttribute("data-lang");
+  var lang = document.getElementById('root').getAttribute('data-lang');
 
   var nombre = form.Nombre.value.trim();
   if(nombre.length < 3){
     e.preventDefault();
-    alert(lang === "es" ? "El nombre debe tener al menos 3 caracteres." : "Name must have at least 3 characters.");
+    alert(lang === 'es' ? 'El nombre debe tener al menos 3 caracteres.' : 'Name must have at least 3 characters.');
     form.Nombre.focus();
     return false;
   }
@@ -949,40 +1002,32 @@ document.getElementById("contact-form").addEventListener("submit", function(e){
   var emailRe = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   if(!emailRe.test(email)){
     e.preventDefault();
-    alert(lang === "es" ? "Ingresa un correo electrónico válido." : "Please enter a valid email address.");
+    alert(lang === 'es' ? 'Ingresa un correo electrónico válido.' : 'Please enter a valid email address.');
     form.Email.focus();
     return false;
   }
 
   var phone = form.Telefono.value.trim();
-  var sel = document.getElementById("country-code");
-  var expectedLen = parseInt(sel.options[sel.selectedIndex].getAttribute("data-len"));
-  if(!/^[0-9]+$/.test(phone)){
+  var csel = document.getElementById('country-code');
+  var expectedLen = parseInt(csel.options[csel.selectedIndex].getAttribute('data-len'));
+  if(!/^[0-9]+$/.test(phone) || phone.length < expectedLen - 1 || phone.length > expectedLen){
     e.preventDefault();
-    alert(lang === "es" ? "El teléfono sólo puede contener números." : "Phone must only contain numbers.");
-    form.Telefono.focus();
-    return false;
-  }
-  if(phone.length < expectedLen - 1 || phone.length > expectedLen){
-    e.preventDefault();
-    alert(lang === "es"
-      ? "El teléfono debe tener " + expectedLen + " dígitos para el país seleccionado."
-      : "Phone must have " + expectedLen + " digits for the selected country.");
+    alert(lang === 'es'
+      ? 'El teléfono debe tener ' + expectedLen + ' dígitos y solo números.'
+      : 'Phone must have ' + expectedLen + ' digits, numbers only.');
     form.Telefono.focus();
     return false;
   }
 
   if(!form.Tipo_Operacion.value){
     e.preventDefault();
-    alert(lang === "es" ? "Selecciona el tipo de operación." : "Please select transaction type.");
-    form.Tipo_Operacion.focus();
+    alert(lang === 'es' ? 'Selecciona el tipo de operación.' : 'Please select transaction type.');
     return false;
   }
 
   if(!form.Fuente.value){
     e.preventDefault();
-    alert(lang === "es" ? "Indica cómo nos conociste." : "Please tell us how you heard about us.");
-    form.Fuente.focus();
+    alert(lang === 'es' ? 'Indica cómo nos conociste.' : 'Please tell us how you heard about us.');
     return false;
   }
 
@@ -990,20 +1035,22 @@ document.getElementById("contact-form").addEventListener("submit", function(e){
 });
 
 document.querySelectorAll('a[href^="#"]').forEach(function(a){
-  a.addEventListener("click", function(e){
-    var href = a.getAttribute("href");
+  a.addEventListener('click', function(e){
+    var href = a.getAttribute('href');
     if(href.length > 1){
       e.preventDefault();
       var el = document.querySelector(href);
-      if(el) el.scrollIntoView({ behavior: "smooth" });
+      if(el) el.scrollIntoView({ behavior: 'smooth' });
     }
   });
 });
 
-if (window.location.search.indexOf("sent=1") > -1) {
-  alert("¡Gracias! Recibimos tu consulta y te contactaremos pronto.");
+if(window.location.search.indexOf('sent=1') > -1){
+  alert('¡Gracias! Recibimos tu consulta y te contactaremos pronto.');
 }
 
+// Initialize on load
+rebuildSelects('es');
 updatePhoneHelp();
 </script>
 </body>
