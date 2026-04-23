@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Titulamex · Escrow inmobiliario en México</title>
-<meta name="description" content="Servicio de escrow para operaciones inmobiliarias en México. Custodiamos los fondos como tercero neutral bajo el marco legal mexicano.">
+<title>TITULAMEX · Escrow inmobiliario en México</title>
+<meta name="description" content="Servicio de escrow para operaciones inmobiliarias en México. Tercero neutral bajo el marco legal mexicano.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -20,22 +20,23 @@ body{font-family:'DM Sans',sans-serif;color:var(--body);background:var(--white);
 [data-lang="es"] .en-only{display:none!important;}
 [data-lang="en"] .es-only{display:none!important;}
 
-nav{background:var(--navy);padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:68px;position:sticky;top:0;z-index:100;}
-.logo-wrap{display:flex;align-items:center;gap:12px;cursor:pointer;}
-.logo-name{font-family:'Cormorant Garamond',serif;font-size:24px;color:#fff;letter-spacing:1.5px;line-height:1;}
-.logo-sub{font-size:9px;color:var(--light);letter-spacing:3px;text-transform:uppercase;display:block;margin-top:2px;}
-.nav-links{display:flex;gap:26px;align-items:center;}
+nav{background:var(--navy);padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:72px;position:sticky;top:0;z-index:100;}
+.logo-wrap{display:flex;align-items:center;gap:14px;cursor:pointer;}
+.logo-img{width:42px;height:42px;object-fit:contain;display:block;}
+.logo-name{font-family:'Cormorant Garamond',serif;font-size:26px;color:#fff;letter-spacing:4px;line-height:1;font-weight:700;}
+.logo-sub{font-size:9px;color:var(--light);letter-spacing:3px;text-transform:uppercase;display:block;margin-top:3px;}
+.nav-links{display:flex;gap:22px;align-items:center;}
 .nav-links a{color:#B5D4F4;font-size:13px;font-weight:400;text-decoration:none;transition:color .2s;}
 .nav-links a:hover{color:#fff;}
 .btn-nav{background:var(--mid);color:#fff!important;padding:9px 22px;border-radius:6px;font-weight:500!important;}
-.btn-nav:hover{background:#2A7BC9!important;color:#fff!important;}
+.btn-nav:hover{background:#2A7BC9!important;}
 .lang-toggle{display:flex;gap:3px;}
 .lang-btn{background:transparent;border:1px solid #185FA5;color:#85B7EB;padding:5px 11px;border-radius:4px;cursor:pointer;font-size:12px;font-family:'DM Sans',sans-serif;font-weight:500;transition:.2s;}
 .lang-btn.active{background:var(--mid);border-color:var(--mid);color:#fff;}
 
 .hero{background:linear-gradient(135deg,var(--navy) 0%,var(--blue) 55%,var(--mid) 100%);padding:100px 5% 90px;position:relative;overflow:hidden;}
-.hero::before{content:'';position:absolute;right:-80px;top:-80px;width:580px;height:580px;border-radius:50%;border:1px solid rgba(255,255,255,0.05);}
-.hero::after{content:'';position:absolute;right:60px;top:60px;width:360px;height:360px;border-radius:50%;border:1px solid rgba(255,255,255,0.04);}
+.hero::before{content:"";position:absolute;right:-80px;top:-80px;width:580px;height:580px;border-radius:50%;border:1px solid rgba(255,255,255,0.05);}
+.hero::after{content:"";position:absolute;right:60px;top:60px;width:360px;height:360px;border-radius:50%;border:1px solid rgba(255,255,255,0.04);}
 .hero-inner{max-width:780px;position:relative;z-index:2;}
 .hero-tag{display:inline-flex;gap:8px;align-items:center;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.18);color:#D6E9F5;font-size:11px;letter-spacing:3px;text-transform:uppercase;padding:6px 16px;border-radius:20px;margin-bottom:28px;font-weight:500;}
 .hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(40px,5.5vw,64px);color:#fff;line-height:1.08;margin-bottom:20px;font-weight:700;}
@@ -59,7 +60,7 @@ nav{background:var(--navy);padding:0 5%;display:flex;align-items:center;justify-
 .si{max-width:1100px;margin:0 auto;}
 .stag{font-size:10px;letter-spacing:3.5px;text-transform:uppercase;color:var(--mid);font-weight:600;margin-bottom:12px;}
 .stitle{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,3.5vw,42px);color:var(--navy);margin-bottom:16px;line-height:1.15;font-weight:700;}
-.slead{font-size:16px;color:var(--body);line-height:1.75;max-width:620px;margin-bottom:44px;font-weight:400;}
+.slead{font-size:16px;color:var(--body);line-height:1.75;max-width:640px;margin-bottom:44px;font-weight:400;}
 
 .caso-box{background:#fff;border:1.5px solid var(--pale2);border-radius:12px;padding:40px;display:grid;grid-template-columns:190px 1fr;gap:44px;align-items:center;}
 .ag{display:flex;flex-direction:column;align-items:center;gap:18px;}
@@ -69,9 +70,11 @@ nav{background:var(--navy);padding:0 5%;display:flex;align-items:center;justify-
 .av-s{background:#EAF3DE;color:#27500A;}
 .av-arr{font-size:18px;color:var(--light);}
 .av-lbl{font-size:11px;color:var(--blue);text-align:center;margin-top:5px;font-weight:600;letter-spacing:.3px;}
-.av-tm{background:var(--blue);border-radius:50%;width:44px;height:44px;display:flex;align-items:center;justify-content:center;margin:0 auto;}
+.av-tm{background:var(--blue);border-radius:50%;width:54px;height:54px;display:flex;align-items:center;justify-content:center;margin:0 auto;padding:6px;}
+.av-tm img{width:100%;height:100%;object-fit:contain;display:block;}
 .ct-h3{font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--navy);margin-bottom:12px;font-weight:700;}
-.ct-p{font-size:15px;color:var(--body);line-height:1.75;font-weight:400;}
+.ct-p{font-size:15px;color:var(--body);line-height:1.75;font-weight:400;margin-bottom:12px;}
+.ct-p:last-child{margin-bottom:0;}
 .ct-p strong{color:var(--blue);font-weight:600;}
 .cs-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:20px;}
 .cs{background:var(--navy);border-radius:8px;padding:18px;text-align:center;}
@@ -100,14 +103,21 @@ nav{background:var(--navy);padding:0 5%;display:flex;align-items:center;justify-
 .step p{font-size:13.5px;color:var(--body);line-height:1.7;font-weight:400;}
 
 .svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
-.svc-card{border:1.5px solid var(--pale2);border-radius:10px;padding:28px;background:#fff;transition:border-color .2s;}
-.svc-card:hover{border-color:var(--mid);}
+.svc-card{border:1.5px solid var(--pale2);border-radius:10px;padding:28px;background:#fff;transition:border-color .2s, transform .15s, box-shadow .2s;}
+.svc-card.now{cursor:pointer;}
+.svc-card.now:hover{border-color:var(--mid);transform:translateY(-3px);box-shadow:0 6px 20px rgba(24,95,165,0.12);}
 .svc-card.coming{border-style:dashed;opacity:.75;}
 .svc-badge{display:inline-block;font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;padding:4px 10px;border-radius:4px;margin-bottom:14px;}
-.svc-badge.now{background:var(--pale);color:var(--navy);}
-.svc-badge.soon{background:#FAEEDA;color:#633806;}
+.svc-badge.bnow{background:var(--pale);color:var(--navy);}
+.svc-badge.bsoon{background:#FAEEDA;color:#633806;}
 .svc-card h3{font-size:16px;font-weight:600;color:var(--navy);margin-bottom:8px;}
-.svc-card p{font-size:14px;color:var(--body);line-height:1.7;font-weight:400;}
+.svc-card p{font-size:14px;color:var(--body);line-height:1.7;font-weight:400;margin-bottom:16px;}
+.svc-cta{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:var(--blue);letter-spacing:.5px;text-transform:uppercase;}
+.svc-cta::after{content:"→";transition:transform .2s;}
+.svc-card.now:hover .svc-cta::after{transform:translateX(4px);}
+.svc-cta-wrap{margin-top:24px;text-align:center;}
+.svc-cta-btn{display:inline-block;background:var(--blue);color:#fff;padding:13px 32px;border-radius:7px;font-weight:600;font-size:14px;text-decoration:none;transition:.2s;font-family:'DM Sans',sans-serif;box-shadow:0 2px 8px rgba(24,95,165,0.2);}
+.svc-cta-btn:hover{background:var(--navy);transform:translateY(-1px);}
 
 .ben-sec{background:var(--navy);padding:80px 5%;}
 .ben-in{max-width:1100px;margin:0 auto;}
@@ -133,21 +143,17 @@ nav{background:var(--navy);padding:0 5%;display:flex;align-items:center;justify-
 .rdot{width:7px;height:7px;background:#fff;border-radius:50%;margin-top:7px;flex-shrink:0;}
 .risk-list span{font-size:14px;color:#D6E9F5;line-height:1.6;font-weight:400;}
 .why-vis{background:rgba(4,44,83,0.5);border:1px solid rgba(214,233,245,0.22);border-radius:10px;padding:32px;}
-.bst{margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid rgba(214,233,245,0.18);}
+.bst{margin-bottom:22px;padding-bottom:22px;border-bottom:1px solid rgba(214,233,245,0.18);}
 .bst:last-child{border:none;margin:0;padding:0;}
 .bst-n{font-family:'Cormorant Garamond',serif;font-size:46px;color:#fff;line-height:1;font-weight:700;}
 .bst-t{font-size:13px;color:#D6E9F5;margin-top:8px;line-height:1.55;font-weight:400;}
+.bst-src{font-size:10px;color:rgba(214,233,245,0.55);margin-top:6px;letter-spacing:.5px;font-style:italic;}
 
-.faq-list{display:flex;flex-direction:column;gap:12px;margin-top:36px;}
-.faq-item{background:#fff;border:1.5px solid var(--pale2);border-radius:10px;overflow:hidden;}
-.faq-q{padding:18px 24px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:15px;font-weight:600;color:var(--navy);transition:background .15s;}
-.faq-q:hover{background:#F7FAFD;}
-.faq-icon{font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--mid);flex-shrink:0;transition:transform .2s;font-weight:700;}
-.faq-item.open .faq-icon{transform:rotate(45deg);}
-.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;}
-.faq-item.open .faq-a{max-height:500px;}
-.faq-a-inner{padding:0 24px 20px;font-size:14px;line-height:1.75;color:var(--body);font-weight:400;}
-.faq-a-inner strong{color:var(--blue);font-weight:600;}
+.mid-cta{background:var(--pale);padding:44px 5%;text-align:center;}
+.mid-cta-title{font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--navy);margin-bottom:8px;font-weight:700;}
+.mid-cta-sub{font-size:14px;color:var(--body);margin-bottom:22px;}
+.mid-cta-btn{display:inline-block;background:var(--blue);color:#fff;padding:14px 40px;border-radius:7px;font-weight:600;font-size:14px;text-decoration:none;transition:.2s;font-family:'DM Sans',sans-serif;box-shadow:0 2px 8px rgba(24,95,165,0.2);}
+.mid-cta-btn:hover{background:var(--navy);transform:translateY(-1px);}
 
 .ct-sec{background:var(--pale);padding:80px 5%;}
 .ct-wrap{max-width:660px;margin:0 auto;}
@@ -155,6 +161,7 @@ nav{background:var(--navy);padding:0 5%;display:flex;align-items:center;justify-
 .frow{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
 .fg{display:flex;flex-direction:column;gap:6px;margin-bottom:16px;}
 .fg label{font-size:11px;color:var(--navy);font-weight:600;letter-spacing:.8px;text-transform:uppercase;}
+.fg label .req{color:#B91C1C;margin-left:2px;}
 .fg input,.fg select,.fg textarea{
   border:1.5px solid var(--blue);border-radius:6px;padding:11px 14px;font-size:14px;
   font-family:'DM Sans',sans-serif;color:var(--navy);outline:none;
@@ -163,28 +170,57 @@ nav{background:var(--navy);padding:0 5%;display:flex;align-items:center;justify-
 .fg input::placeholder,.fg textarea::placeholder{color:#8FADC9;}
 .fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--mid);box-shadow:0 0 0 3px rgba(55,138,221,0.15);}
 .fg textarea{resize:vertical;min-height:96px;}
+.field-help{font-size:11px;color:#7B9AB8;margin-top:3px;}
+
+.phone-wrap{display:grid;grid-template-columns:160px 1fr;gap:8px;}
+.phone-wrap select{padding:11px 8px;font-size:13px;}
+.phone-wrap input{width:100%;}
+
 .btn-submit{width:100%;background:var(--blue);color:#fff;border:none;padding:16px;border-radius:7px;font-size:15px;font-weight:600;font-family:'DM Sans',sans-serif;cursor:pointer;margin-top:8px;transition:background .2s, transform .1s;letter-spacing:.3px;box-shadow:0 2px 8px rgba(24,95,165,0.25);}
 .btn-submit:hover{background:var(--navy);}
 .btn-submit:active{transform:scale(0.98);}
-.form-msg{padding:14px;border-radius:7px;margin-top:12px;font-size:14px;text-align:center;display:none;}
-.form-msg.success{background:#E8F5E9;color:#1B5E20;border:1px solid #A5D6A7;display:block;}
+.form-note{font-size:11px;color:#5A7A96;margin-top:14px;line-height:1.6;text-align:center;}
 
-.legal-sec{background:#F7FAFD;padding:50px 5% 40px;border-top:1px solid var(--pale2);}
+.faq-list{display:flex;flex-direction:column;gap:12px;margin-top:36px;}
+.faq-item{background:#fff;border:1.5px solid var(--pale2);border-radius:10px;overflow:hidden;}
+.faq-q{padding:18px 24px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:15px;font-weight:600;color:var(--navy);transition:background .15s;}
+.faq-q:hover{background:#F7FAFD;}
+.faq-icon{font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--mid);flex-shrink:0;transition:transform .2s;font-weight:700;}
+.faq-item.open .faq-icon{transform:rotate(45deg);}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;}
+.faq-item.open .faq-a{max-height:600px;}
+.faq-a-inner{padding:0 24px 20px;font-size:14px;line-height:1.75;color:var(--body);font-weight:400;}
+.faq-a-inner strong{color:var(--blue);font-weight:600;}
+
+.trust-sec{background:#F7FAFD;padding:56px 5%;border-top:1px solid var(--pale2);border-bottom:1px solid var(--pale2);}
+.trust-in{max-width:900px;margin:0 auto;text-align:center;}
+.trust-h{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--mid);font-weight:600;margin-bottom:12px;}
+.trust-title{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--navy);font-weight:600;margin-bottom:28px;}
+.trust-items{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:24px;}
+.trust-item-box{text-align:center;padding:0 10px;}
+.trust-item-title{font-size:13px;color:var(--navy);font-weight:600;margin-bottom:6px;}
+.trust-item-desc{font-size:12px;color:#5A7A96;line-height:1.6;font-weight:400;}
+
+.legal-sec{background:#F4F7FA;padding:40px 5% 32px;border-top:1px solid var(--pale2);}
 .legal-in{max-width:900px;margin:0 auto;}
-.legal-h{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--blue);font-weight:600;margin-bottom:16px;}
-.legal-p{font-size:12.5px;color:#5A7A96;line-height:1.75;margin-bottom:10px;font-weight:400;}
+.legal-h{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:#7B9AB8;font-weight:600;margin-bottom:12px;}
+.legal-p{font-size:11.5px;color:#6B8AA8;line-height:1.7;margin-bottom:8px;font-weight:400;}
 .legal-p strong{color:var(--body);font-weight:600;}
 
-footer{background:var(--navy);padding:40px 5%;text-align:center;}
-.ft-brand{font-family:'Cormorant Garamond',serif;font-size:24px;color:#fff;margin-bottom:6px;font-weight:700;}
-.ft-sub{color:#85B7EB;margin-bottom:8px;font-size:11px;letter-spacing:3px;text-transform:uppercase;}
+footer{background:var(--navy);padding:48px 5% 32px;text-align:center;}
+.ft-logo{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:8px;}
+.ft-logo img{width:38px;height:38px;object-fit:contain;}
+.ft-brand{font-family:'Cormorant Garamond',serif;font-size:28px;color:#fff;font-weight:700;letter-spacing:4px;}
+.ft-sub{color:#85B7EB;margin-bottom:12px;font-size:11px;letter-spacing:3px;text-transform:uppercase;}
 footer p{color:#85B7EB;font-size:12px;}
+.ft-contact{color:#D6E9F5;font-size:13px;margin:14px 0 18px;}
+.ft-contact a{color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.3);}
 
 @media(max-width:720px){
   nav{padding:0 4%;}
-  .logo-name{font-size:20px;}
-  .stats-grid,.ben-grid,.steps-row,.svc-grid{grid-template-columns:1fr 1fr;}
-  .why-grid,.caso-box,.cs-row,.frow{grid-template-columns:1fr;}
+  .logo-name{font-size:22px;letter-spacing:3px;}
+  .stats-grid,.ben-grid,.steps-row,.svc-grid,.trust-items{grid-template-columns:1fr 1fr;}
+  .why-grid,.caso-box,.cs-row,.frow,.phone-wrap{grid-template-columns:1fr;}
   .nav-links{display:none;}
   .caso-box{padding:28px;}
   .ct-form{padding:28px;}
@@ -199,13 +235,9 @@ footer p{color:#85B7EB;font-size:12px;}
 
 <nav>
   <div class="logo-wrap" onclick="scrollToTop()">
-    <svg width="36" height="36" viewBox="0 0 40 44" fill="none">
-      <path d="M20 2L4 9v12c0 10 7 19 16 21 9-2 16-11 16-21V9L20 2z" fill="#042C53" stroke="#85B7EB" stroke-width="1.2"/>
-      <path d="M20 7L9 12v9c0 7 5 13 11 15 6-2 11-8 11-15v-9L20 7z" fill="#185FA5"/>
-      <path d="M15 19l-3 3 3 3 7-7" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-    </svg>
+    <img src="data:image/png;base64,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" alt="Titulamex" class="logo-img">
     <div>
-      <span class="logo-name">Titulamex</span>
+      <span class="logo-name">TITULAMEX</span>
       <span class="logo-sub es-only">Servicio de escrow</span>
       <span class="logo-sub en-only">Escrow service</span>
     </div>
@@ -240,7 +272,7 @@ footer p{color:#85B7EB;font-size:12px;}
     <p class="hero-sub en-only">As a neutral third party, we hold the funds while both sides meet the terms of the deal.</p>
     <div class="hero-btns">
       <a href="#contacto" class="btn-solid">
-        <span class="es-only">Iniciar mi operación</span><span class="en-only">Start my transaction</span>
+        <span class="es-only">Solicitar propuesta</span><span class="en-only">Request a proposal</span>
       </a>
       <a href="#caso" class="btn-ghost">
         <span class="es-only">¿Cómo funciona?</span><span class="en-only">How it works</span>
@@ -260,7 +292,7 @@ footer p{color:#85B7EB;font-size:12px;}
     <div class="stat-card">
       <div class="stat-n">1 de 3</div>
       <div class="stat-l es-only">compradores conoce un caso de fraude inmobiliario</div>
-      <div class="stat-l en-only">buyers know of a real estate fraud case</div>
+      <div class="stat-l en-only">buyers knows a real estate fraud case</div>
       <div class="stat-s">CONDUSEF 2022</div>
     </div>
     <div class="stat-card">
@@ -280,10 +312,10 @@ footer p{color:#85B7EB;font-size:12px;}
 
 <div class="sec" id="caso">
   <div class="si">
-    <p class="stag es-only">Un ejemplo simple</p>
-    <p class="stag en-only">A simple example</p>
-    <h2 class="stitle es-only">Así funciona el escrow</h2>
-    <h2 class="stitle en-only">How escrow works</h2>
+    <p class="stag es-only">Un ejemplo inmobiliario</p>
+    <p class="stag en-only">A real estate example</p>
+    <h2 class="stitle es-only">Así funciona en una compraventa</h2>
+    <h2 class="stitle en-only">How it works in a real estate deal</h2>
     <div class="caso-box">
       <div class="ag">
         <div class="ap">
@@ -298,15 +330,21 @@ footer p{color:#85B7EB;font-size:12px;}
           </div>
         </div>
         <div style="text-align:center">
-          <div class="av-tm"><svg width="20" height="20" viewBox="0 0 40 44" fill="none"><path d="M20 2L4 9v12c0 10 7 19 16 21 9-2 16-11 16-21V9L20 2z" fill="#185FA5" stroke="#85B7EB" stroke-width="1"/><path d="M15 19l-3 3 3 3 7-7" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></div>
+          <div class="av-tm">
+            <img src="data:image/png;base64,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" alt="Titulamex">
+          </div>
           <div class="av-lbl" style="margin-top:6px">Titulamex</div>
         </div>
       </div>
       <div>
-        <h3 class="ct-h3 es-only">Fernando le quiere comprar a Diego</h3>
-        <h3 class="ct-h3 en-only">Fernando wants to buy from Diego</h3>
-        <p class="ct-p es-only">Fernando no quiere pagar sin saber que recibirá la propiedad. Diego no quiere transferir sin saber que cobrará. <strong>Titulamex retiene el dinero hasta que ambas partes cumplan lo pactado en el contrato.</strong></p>
-        <p class="ct-p en-only">Fernando doesn't want to pay without knowing he'll get the property. Diego doesn't want to transfer without knowing he'll get paid. <strong>Titulamex holds the funds until both parties meet the terms of the contract.</strong></p>
+        <h3 class="ct-h3 es-only">Una compraventa con certeza para todos</h3>
+        <h3 class="ct-h3 en-only">A real estate deal with certainty for all</h3>
+        <p class="ct-p es-only"><strong>Fernando</strong> quiere comprar la propiedad de Diego pero necesita certeza de que la escritura está en orden antes de soltar su dinero. <strong>Diego</strong> quiere vender pero también quiere asegurarse de que Fernando tenga los fondos reales y que el depósito sea serio, no un simple apartado que cualquiera rompe.</p>
+        <p class="ct-p en-only"><strong>Fernando</strong> wants to buy Diego's property but needs certainty that the title is clean before releasing his money. <strong>Diego</strong> wants to sell but also wants assurance that Fernando has the actual funds and that the deposit is serious — not a casual hold anyone can walk away from.</p>
+        <p class="ct-p es-only">El <strong>broker</strong> que los conectó quiere que la operación cierre y que su comisión quede asegurada desde el contrato, sin perseguir pagos después del cierre.</p>
+        <p class="ct-p en-only">The <strong>broker</strong> who introduced them wants the deal to close and their commission to be locked in from the contract — no chasing payments after closing.</p>
+        <p class="ct-p es-only"><strong>Titulamex retiene los fondos y los libera sólo cuando todas las condiciones pactadas se cumplen.</strong> Todos ganan certeza.</p>
+        <p class="ct-p en-only"><strong>Titulamex holds the funds and releases them only when every agreed condition is met.</strong> Everyone gains certainty.</p>
         <div class="cs-row">
           <div class="cs"><div class="cs-n">1</div>
             <div class="cs-t es-only">Fernando deposita en Titulamex</div>
@@ -317,8 +355,8 @@ footer p{color:#85B7EB;font-size:12px;}
             <div class="cs-t en-only">Conditions are met</div>
           </div>
           <div class="cs"><div class="cs-n">3</div>
-            <div class="cs-t es-only">Diego recibe el pago</div>
-            <div class="cs-t en-only">Diego gets paid</div>
+            <div class="cs-t es-only">Diego y broker reciben pago</div>
+            <div class="cs-t en-only">Diego &amp; broker get paid</div>
           </div>
         </div>
       </div>
@@ -353,7 +391,7 @@ footer p{color:#85B7EB;font-size:12px;}
         </tr>
         <tr>
           <td class="td-sp"></td>
-          <td class="td-con"><span class="ck">✓</span><span class="es-only">Si no se cumplen condiciones, los fondos <strong>se devuelven según el contrato</strong></span><span class="en-only">If conditions aren't met, funds are <strong>returned per the contract</strong></span></td>
+          <td class="td-con"><span class="ck">✓</span><span class="es-only">Si no se cumplen condiciones, los fondos <strong>se devuelven según el contrato</strong></span><span class="en-only">If conditions are not met, funds are <strong>returned per the contract</strong></span></td>
           <td class="td-sin"><span class="cx">✗</span><span class="es-only">Devolución sujeta a negociación con el vendedor</span><span class="en-only">Refund subject to negotiation with the seller</span></td>
         </tr>
         <tr>
@@ -378,19 +416,19 @@ footer p{color:#85B7EB;font-size:12px;}
     <h2 class="stitle es-only">Cuatro pasos claros</h2>
     <h2 class="stitle en-only">Four clear steps</h2>
     <p class="slead es-only">Somos el tercero neutral. Nuestro rol es custodiar los fondos y ejecutar las instrucciones del contrato.</p>
-    <p class="slead en-only">We're the neutral third party. Our role is to hold the funds and follow the contract's instructions.</p>
+    <p class="slead en-only">We are the neutral third party. Our role is to hold the funds and follow the contract instructions.</p>
     <div class="steps-row">
       <div class="step">
         <div class="step-n">01</div>
-        <h3 class="es-only">Contrato</h3><h3 class="en-only">Contract</h3>
-        <p class="es-only">Las partes definen las condiciones del cierre. Titulamex redacta las instrucciones de escrow.</p>
-        <p class="en-only">The parties set the closing conditions. Titulamex drafts the escrow instructions.</p>
+        <h3 class="es-only">KYC y contrato</h3><h3 class="en-only">KYC &amp; contract</h3>
+        <p class="es-only">Verificación de identidad de las partes. Se define el contrato y las condiciones de liberación.</p>
+        <p class="en-only">ID verification for all parties. The contract and release conditions are defined.</p>
       </div>
       <div class="step">
         <div class="step-n">02</div>
         <h3 class="es-only">Depósito</h3><h3 class="en-only">Deposit</h3>
-        <p class="es-only">El comprador transfiere los fondos a la cuenta de escrow, bajo custodia neutral.</p>
-        <p class="en-only">The buyer wires funds to the escrow account, held under neutral custody.</p>
+        <p class="es-only">El comprador transfiere los fondos desde su cuenta declarada a la cuenta de escrow.</p>
+        <p class="en-only">The buyer wires funds from their declared account into the escrow account.</p>
       </div>
       <div class="step">
         <div class="step-n">03</div>
@@ -417,38 +455,47 @@ footer p{color:#85B7EB;font-size:12px;}
     <p class="slead es-only">Hoy: compraventa y corretaje. Próximamente: desarrollos nuevos y liberación por etapas.</p>
     <p class="slead en-only">Today: transactions and brokerage. Soon: new developments and staged release.</p>
     <div class="svc-grid">
-      <div class="svc-card">
-        <span class="svc-badge now es-only">Disponible</span>
-        <span class="svc-badge now en-only">Available</span>
+      <a href="#contacto" class="svc-card now" style="text-decoration:none;color:inherit;">
+        <span class="svc-badge bnow es-only">Disponible</span>
+        <span class="svc-badge bnow en-only">Available</span>
         <h3 class="es-only">Compraventa inmobiliaria</h3>
         <h3 class="en-only">Real estate transactions</h3>
         <p class="es-only">Casas, departamentos, terrenos y locales. Custodia de fondos desde el anticipo hasta el cierre notarial.</p>
         <p class="en-only">Homes, condos, land, and commercial spaces. Fund custody from earnest money through closing.</p>
-      </div>
-      <div class="svc-card">
-        <span class="svc-badge now es-only">Disponible</span>
-        <span class="svc-badge now en-only">Available</span>
+        <span class="svc-cta es-only">Solicitar propuesta</span>
+        <span class="svc-cta en-only">Request proposal</span>
+      </a>
+      <a href="#contacto" class="svc-card now" style="text-decoration:none;color:inherit;">
+        <span class="svc-badge bnow es-only">Disponible</span>
+        <span class="svc-badge bnow en-only">Available</span>
         <h3 class="es-only">Corretaje e inversión extranjera</h3>
         <h3 class="en-only">Brokerage &amp; foreign buyers</h3>
         <p class="es-only">Para brokers con clientes nacionales o extranjeros. Incluye operaciones en fideicomiso bancario en zona restringida.</p>
         <p class="en-only">For brokers with local or foreign clients. Includes bank trust (fideicomiso) transactions in the restricted zone.</p>
-      </div>
+        <span class="svc-cta es-only">Solicitar propuesta</span>
+        <span class="svc-cta en-only">Request proposal</span>
+      </a>
       <div class="svc-card coming">
-        <span class="svc-badge soon es-only">Próximamente</span>
-        <span class="svc-badge soon en-only">Coming soon</span>
+        <span class="svc-badge bsoon es-only">Próximamente</span>
+        <span class="svc-badge bsoon en-only">Coming soon</span>
         <h3 class="es-only">Nuevos desarrollos</h3>
         <h3 class="en-only">New developments</h3>
         <p class="es-only">Preventas y proyectos en construcción. Fondos liberados conforme avanzan las etapas de obra.</p>
         <p class="en-only">Presales and construction projects. Funds released as construction milestones are reached.</p>
       </div>
       <div class="svc-card coming">
-        <span class="svc-badge soon es-only">Próximamente</span>
-        <span class="svc-badge soon en-only">Coming soon</span>
+        <span class="svc-badge bsoon es-only">Próximamente</span>
+        <span class="svc-badge bsoon en-only">Coming soon</span>
         <h3 class="es-only">Liberación por etapas</h3>
         <h3 class="en-only">Staged release</h3>
         <p class="es-only">Operaciones de largo plazo. Fondos liberados por hitos definidos en el contrato.</p>
         <p class="en-only">Long-term deals. Funds released at milestones defined in the contract.</p>
       </div>
+    </div>
+    <div class="svc-cta-wrap">
+      <a href="#contacto" class="svc-cta-btn">
+        <span class="es-only">Solicitar propuesta</span><span class="en-only">Request a proposal</span>
+      </a>
     </div>
   </div>
 </div>
@@ -505,7 +552,7 @@ footer p{color:#85B7EB;font-size:12px;}
       <p class="why-stag es-only">¿Por qué en México?</p>
       <p class="why-stag en-only">Why in Mexico?</p>
       <h2 class="why-title es-only">Un estándar que ya existe en EE.UU.</h2>
-      <h2 class="why-title en-only">A standard that's already routine in the US</h2>
+      <h2 class="why-title en-only">A standard that is already routine in the US</h2>
       <p class="why-lead es-only">En Estados Unidos el escrow es parte rutinaria de toda transacción inmobiliaria. En México apenas empieza a adoptarse — y los riesgos de no tenerlo son reales.</p>
       <p class="why-lead en-only">In the United States, escrow is a standard part of every real estate closing. In Mexico, adoption is just beginning — and the risks of skipping it are real.</p>
       <ul class="risk-list">
@@ -518,20 +565,179 @@ footer p{color:#85B7EB;font-size:12px;}
     <div class="why-vis">
       <div class="bst">
         <div class="bst-n">73%</div>
-        <div class="bst-t es-only">de fraudes ocurren en la etapa de anticipo</div>
-        <div class="bst-t en-only">of fraud happens at the earnest-money stage</div>
+        <div class="bst-t es-only">de fraudes ocurren en la etapa de anticipo — exactamente donde el escrow protege</div>
+        <div class="bst-t en-only">of fraud happens at the earnest-money stage — exactly where escrow protects</div>
+        <div class="bst-src es-only">Fuente: CONDUSEF, reporte anual 2022</div>
+        <div class="bst-src en-only">Source: CONDUSEF, 2022 annual report</div>
       </div>
       <div class="bst">
         <div class="bst-n">+40%</div>
-        <div class="bst-t es-only">de crecimiento en inversión extranjera en zonas turísticas</div>
-        <div class="bst-t en-only">growth in foreign investment in tourist zones</div>
+        <div class="bst-t es-only">de crecimiento en inversión extranjera inmobiliaria en zonas turísticas</div>
+        <div class="bst-t en-only">growth in foreign real estate investment in tourist zones</div>
+        <div class="bst-src es-only">Fuente: Secretaría de Economía, inversión extranjera directa 2019-2024</div>
+        <div class="bst-src en-only">Source: Mexican Ministry of Economy, FDI 2019-2024</div>
       </div>
       <div class="bst">
-        <div class="bst-n">&lt;2%</div>
-        <div class="bst-t es-only">de las operaciones en México usan escrow hoy</div>
-        <div class="bst-t en-only">of Mexican deals use escrow today</div>
+        <div class="bst-n">100%</div>
+        <div class="bst-t es-only">de las operaciones inmobiliarias en EE.UU. usan escrow — es el estándar legal</div>
+        <div class="bst-t en-only">of US real estate transactions use escrow — it is the legal standard</div>
+        <div class="bst-src es-only">Fuente: National Association of Realtors (NAR), estándares de práctica</div>
+        <div class="bst-src en-only">Source: National Association of Realtors (NAR), standards of practice</div>
       </div>
     </div>
+  </div>
+</div>
+
+<div class="mid-cta">
+  <p class="mid-cta-title es-only">¿Tu operación necesita escrow?</p>
+  <p class="mid-cta-title en-only">Does your deal need escrow?</p>
+  <p class="mid-cta-sub es-only">Cuéntanos los detalles y te preparamos una propuesta sin compromiso.</p>
+  <p class="mid-cta-sub en-only">Tell us the details and we will prepare a no-obligation proposal.</p>
+  <a href="#contacto" class="mid-cta-btn">
+    <span class="es-only">Solicitar propuesta</span><span class="en-only">Request a proposal</span>
+  </a>
+</div>
+
+<div class="trust-sec">
+  <div class="trust-in">
+    <p class="trust-h es-only">Cumplimiento y transparencia</p>
+    <p class="trust-h en-only">Compliance &amp; transparency</p>
+    <p class="trust-title es-only">Operamos bajo el marco legal mexicano</p>
+    <p class="trust-title en-only">We operate under Mexican legal framework</p>
+    <div class="trust-items">
+      <div class="trust-item-box">
+        <div class="trust-item-title es-only">Tercero neutral</div>
+        <div class="trust-item-title en-only">Neutral third party</div>
+        <div class="trust-item-desc es-only">Custodios independientes. No representamos a ninguna de las partes ni arbitramos disputas.</div>
+        <div class="trust-item-desc en-only">Independent custodians. We do not represent any party nor arbitrate disputes.</div>
+      </div>
+      <div class="trust-item-box">
+        <div class="trust-item-title es-only">Cumplimiento PLD / KYC</div>
+        <div class="trust-item-title en-only">AML / KYC compliance</div>
+        <div class="trust-item-desc es-only">Identificación obligatoria de clientes conforme a la LFPIORPI y reglas del SAT/UIF.</div>
+        <div class="trust-item-desc en-only">Mandatory client identification per Mexican AML law and SAT/UIF rules.</div>
+      </div>
+      <div class="trust-item-box">
+        <div class="trust-item-title es-only">Código de Comercio</div>
+        <div class="trust-item-title en-only">Commercial Code</div>
+        <div class="trust-item-desc es-only">Artículos 273 a 308 — contabilidad estricta de fondos de terceros y cumplimiento de instrucciones.</div>
+        <div class="trust-item-desc en-only">Articles 273-308 — strict accounting of third-party funds and adherence to written instructions.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ct-sec" id="contacto">
+  <div class="ct-wrap">
+    <p class="stag" style="text-align:center"><span class="es-only">Hablemos</span><span class="en-only">Let us talk</span></p>
+    <h2 class="stitle es-only" style="text-align:center">¿Listo para proteger tu operación?</h2>
+    <h2 class="stitle en-only" style="text-align:center">Ready to protect your deal?</h2>
+    <p class="slead es-only" style="margin:0 auto;text-align:center">Déjanos tus datos y te contactamos a la brevedad.</p>
+    <p class="slead en-only" style="margin:0 auto;text-align:center">Leave your details and we will reach out shortly.</p>
+    <form class="ct-form" id="contact-form" action="https://formsubmit.co/info@titulamex.com" method="POST" novalidate>
+      <input type="hidden" name="_subject" value="Nueva consulta desde Titulamex.com">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://titulamex.com/?sent=1">
+
+      <div class="frow" style="margin-bottom:0">
+        <div class="fg">
+          <label><span class="es-only">Nombre completo</span><span class="en-only">Full name</span><span class="req">*</span></label>
+          <input type="text" name="Nombre" required minlength="3" maxlength="80">
+        </div>
+        <div class="fg">
+          <label>Email<span class="req">*</span></label>
+          <input type="email" name="Email" required maxlength="100">
+        </div>
+      </div>
+
+      <div class="fg">
+        <label><span class="es-only">Teléfono / WhatsApp</span><span class="en-only">Phone / WhatsApp</span><span class="req">*</span></label>
+        <div class="phone-wrap">
+          <select name="Codigo_Pais" id="country-code" required>
+            <option value="+52" data-len="10" selected>🇲🇽 México +52</option>
+            <option value="+1-US" data-len="10">🇺🇸 USA +1</option>
+            <option value="+1-CA" data-len="10">🇨🇦 Canada +1</option>
+            <option value="+34" data-len="9">🇪🇸 España +34</option>
+            <option value="+57" data-len="10">🇨🇴 Colombia +57</option>
+            <option value="+54" data-len="10">🇦🇷 Argentina +54</option>
+            <option value="+56" data-len="9">🇨🇱 Chile +56</option>
+            <option value="+51" data-len="9">🇵🇪 Perú +51</option>
+            <option value="+58" data-len="10">🇻🇪 Venezuela +58</option>
+            <option value="+502" data-len="8">🇬🇹 Guatemala +502</option>
+            <option value="+503" data-len="8">🇸🇻 El Salvador +503</option>
+            <option value="+506" data-len="8">🇨🇷 Costa Rica +506</option>
+            <option value="+507" data-len="8">🇵🇦 Panamá +507</option>
+            <option value="+593" data-len="9">🇪🇨 Ecuador +593</option>
+            <option value="+598" data-len="8">🇺🇾 Uruguay +598</option>
+            <option value="+44" data-len="10">🇬🇧 UK +44</option>
+            <option value="+49" data-len="11">🇩🇪 Germany +49</option>
+            <option value="+33" data-len="9">🇫🇷 France +33</option>
+            <option value="+39" data-len="10">🇮🇹 Italy +39</option>
+            <option value="+31" data-len="9">🇳🇱 Netherlands +31</option>
+            <option value="+41" data-len="9">🇨🇭 Switzerland +41</option>
+            <option value="+55" data-len="11">🇧🇷 Brazil +55</option>
+            <option value="+61" data-len="9">🇦🇺 Australia +61</option>
+            <option value="+81" data-len="10">🇯🇵 Japan +81</option>
+            <option value="+86" data-len="11">🇨🇳 China +86</option>
+          </select>
+          <input type="tel" name="Telefono" id="phone-input" inputmode="numeric" required placeholder="1234567890" maxlength="11">
+        </div>
+        <span class="field-help es-only" id="phone-help">10 dígitos · Sólo números</span>
+        <span class="field-help en-only">10 digits · Numbers only</span>
+      </div>
+
+      <div class="fg">
+        <label><span class="es-only">Tipo de operación</span><span class="en-only">Transaction type</span><span class="req">*</span></label>
+        <select name="Tipo_Operacion" required>
+          <option value="" class="es-only">-- Selecciona --</option>
+          <option value="" class="en-only">-- Select --</option>
+          <option value="Compraventa inmobiliaria" class="es-only">Compraventa inmobiliaria</option>
+          <option value="Real estate transaction" class="en-only">Real estate transaction</option>
+          <option value="Comprador extranjero" class="es-only">Comprador extranjero</option>
+          <option value="Foreign buyer" class="en-only">Foreign buyer</option>
+          <option value="Consulta general" class="es-only">Consulta general</option>
+          <option value="General inquiry" class="en-only">General inquiry</option>
+        </select>
+      </div>
+
+      <div class="fg">
+        <label><span class="es-only">¿Cómo nos conociste?</span><span class="en-only">How did you hear about us?</span><span class="req">*</span></label>
+        <select id="src-sel" name="Fuente" onchange="toggleSrc()" required>
+          <option value="" class="es-only">-- Selecciona una opción --</option>
+          <option value="" class="en-only">-- Select an option --</option>
+          <option value="Agencia/broker" class="es-only">Agencia / broker inmobiliario</option>
+          <option value="Agency/broker" class="en-only">Agency / real estate broker</option>
+          <option value="Instagram">Instagram</option>
+          <option value="Google">Google</option>
+          <option value="Recomendacion" class="es-only">Recomendación personal</option>
+          <option value="Referral" class="en-only">Personal referral</option>
+          <option value="LinkedIn">LinkedIn</option>
+          <option value="Otro" class="es-only">Otro</option>
+          <option value="Other" class="en-only">Other</option>
+        </select>
+      </div>
+      <div class="fg" id="src-name-row" style="display:none">
+        <label class="es-only">Nombre de la agencia o broker</label>
+        <label class="en-only">Agency or broker name</label>
+        <input type="text" name="Nombre_Agencia" maxlength="80">
+      </div>
+      <div class="fg" id="src-other-row" style="display:none">
+        <label class="es-only">¿Dónde nos conociste?</label>
+        <label class="en-only">Where did you find us?</label>
+        <input type="text" name="Fuente_Otro" maxlength="80">
+      </div>
+      <div class="fg">
+        <label class="es-only">Cuéntanos sobre tu operación</label>
+        <label class="en-only">Tell us about your deal</label>
+        <textarea name="Mensaje" maxlength="1000"></textarea>
+      </div>
+      <button type="submit" class="btn-submit">
+        <span class="es-only">Enviar consulta</span><span class="en-only">Send inquiry</span>
+      </button>
+      <p class="form-note es-only">Al enviar aceptas que te contactemos a los datos proporcionados. No compartimos tu información con terceros.</p>
+      <p class="form-note en-only">By submitting you agree to be contacted at the details provided. We do not share your information with third parties.</p>
+    </form>
   </div>
 </div>
 
@@ -551,7 +757,19 @@ footer p{color:#85B7EB;font-size:12px;}
         </div>
         <div class="faq-a"><div class="faq-a-inner">
           <span class="es-only">Es un acuerdo donde un <strong>tercero neutral</strong> (nosotros) retiene fondos y documentos de comprador y vendedor, y los libera únicamente cuando se cumplen las condiciones pactadas en el contrato. Somos custodios, no parte interesada en la operación.</span>
-          <span class="en-only">It's an arrangement where a <strong>neutral third party</strong> (us) holds funds and documents from buyer and seller, and releases them only when the conditions set in the contract are met. We act as custodians, not as a party with interest in the deal.</span>
+          <span class="en-only">It is an arrangement where a <strong>neutral third party</strong> (us) holds funds and documents from buyer and seller, and releases them only when the conditions set in the contract are met. We act as custodians, not as a party with interest in the deal.</span>
+        </div></div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">
+          <span class="es-only">¿Qué documentos necesito para empezar?</span>
+          <span class="en-only">What documents do I need to get started?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">
+          <span class="es-only">Para cumplir con nuestras obligaciones de PLD/KYC pedimos: <strong>identificación oficial vigente</strong>, <strong>constancia de situación fiscal</strong> (máximo 3 meses), <strong>comprobante de domicilio</strong> reciente, y <strong>estado de cuenta bancario</strong> de los últimos 3 meses de la cuenta desde la cual transferirás los fondos. Para personas morales solicitamos acta constitutiva, poderes e identificación del beneficiario final.</span>
+          <span class="en-only">To comply with our AML/KYC obligations we request: <strong>valid government ID</strong>, <strong>tax status certificate</strong> (under 3 months old), recent <strong>proof of address</strong>, and <strong>bank statements</strong> from the last 3 months for the account you will wire funds from. For corporations we also need incorporation documents, powers of attorney, and beneficial owner ID.</span>
         </div></div>
       </div>
 
@@ -563,26 +781,38 @@ footer p{color:#85B7EB;font-size:12px;}
         </div>
         <div class="faq-a"><div class="faq-a-inner">
           <span class="es-only"><strong>No.</strong> Si surge una disputa entre comprador y vendedor, los fondos quedan <strong>congelados en custodia</strong> hasta que las partes lleguen a un acuerdo o resuelvan por mediación, arbitraje o vía judicial. Titulamex no actúa como árbitro ni como asesor legal.</span>
-          <span class="en-only"><strong>No.</strong> If a dispute comes up between buyer and seller, the funds stay <strong>frozen in custody</strong> until the parties reach an agreement or resolve it through mediation, arbitration, or the courts. Titulamex doesn't act as an arbitrator or provide legal counsel.</span>
+          <span class="en-only"><strong>No.</strong> If a dispute comes up between buyer and seller, the funds stay <strong>frozen in custody</strong> until the parties reach an agreement or resolve it through mediation, arbitration, or the courts. Titulamex does not act as an arbitrator or provide legal counsel.</span>
+        </div></div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">
+          <span class="es-only">¿Aceptan efectivo, cheques o criptomonedas?</span>
+          <span class="en-only">Do you accept cash, checks, or crypto?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">
+          <span class="es-only"><strong>No.</strong> Sólo aceptamos transferencias electrónicas desde la cuenta bancaria declarada durante el proceso KYC, cuyo titular debe coincidir con el cliente. Esta política es parte de nuestro cumplimiento con la Ley Federal para la Prevención e Identificación de Operaciones con Recursos de Procedencia Ilícita (LFPIORPI).</span>
+          <span class="en-only"><strong>No.</strong> We only accept wire transfers from the bank account declared during KYC, whose holder must match the client. This policy is part of our compliance with Mexican AML law (LFPIORPI).</span>
         </div></div>
       </div>
 
       <div class="faq-item" onclick="toggleFaq(this)">
         <div class="faq-q">
           <span class="es-only">¿Cuál es el marco legal en México?</span>
-          <span class="en-only">What's the legal framework in Mexico?</span>
+          <span class="en-only">What is the legal framework in Mexico?</span>
           <span class="faq-icon">+</span>
         </div>
         <div class="faq-a"><div class="faq-a-inner">
-          <span class="es-only">La administración y entrega de fondos por terceros en México está regulada por los <strong>Artículos 273 a 308 del Código de Comercio</strong>, que establecen contabilidad estricta, cumplimiento de las instrucciones entre comprador y vendedor, y responsabilidad ética de las partes que manejan el escrow.</span>
-          <span class="en-only">Third-party management and disbursement of funds in Mexico is regulated under <strong>Articles 273 through 308 of the Commercial Code</strong>, which require strict accounting, compliance with buyer-seller instructions, and ethical responsibility for parties handling the escrow.</span>
+          <span class="es-only">La administración y entrega de fondos por terceros en México está regulada por los <strong>Artículos 273 a 308 del Código de Comercio</strong>. Adicionalmente, como Actividad Vulnerable (Art. 17 Fr. X de la LFPIORPI), cumplimos con las obligaciones de identificación de clientes, reportes al SAT/UIF y conservación de expedientes establecidas por la ley.</span>
+          <span class="en-only">Third-party management and disbursement of funds in Mexico is regulated under <strong>Articles 273 through 308 of the Commercial Code</strong>. Additionally, as a Vulnerable Activity (Art. 17 §X of Mexican AML law), we comply with customer identification, SAT/UIF reporting, and record-keeping obligations.</span>
         </div></div>
       </div>
 
       <div class="faq-item" onclick="toggleFaq(this)">
         <div class="faq-q">
           <span class="es-only">¿Qué pasa si soy extranjero comprando en zona costera o fronteriza?</span>
-          <span class="en-only">What if I'm a foreign buyer in the coastal or border zone?</span>
+          <span class="en-only">What if I am a foreign buyer in the coastal or border zone?</span>
           <span class="faq-icon">+</span>
         </div>
         <div class="faq-a"><div class="faq-a-inner">
@@ -598,8 +828,8 @@ footer p{color:#85B7EB;font-size:12px;}
           <span class="faq-icon">+</span>
         </div>
         <div class="faq-a"><div class="faq-a-inner">
-          <span class="es-only">Un <strong>fee fijo por administración y custodia</strong> al iniciar la operación. Si la custodia se extiende más allá del plazo estándar, aplica una tarifa mensual adicional. No cobramos porcentaje sobre el monto ni intereses sobre los fondos depositados.</span>
-          <span class="en-only">A <strong>flat fee for administration and custody</strong> at the start. If custody extends beyond the standard term, a monthly fee applies. We don't charge a percentage of the transaction, and we don't earn interest on the deposited funds.</span>
+          <span class="es-only">Un <strong>fee fijo por administración y custodia</strong> al iniciar la operación. Si la custodia se extiende más allá del plazo estándar, aplica una tarifa mensual adicional. No cobramos porcentaje sobre el monto ni intereses sobre los fondos depositados. El fee de apertura no es reembolsable.</span>
+          <span class="en-only">A <strong>flat fee for administration and custody</strong> at the start. If custody extends beyond the standard term, a monthly fee applies. We do not charge a percentage of the transaction, and we do not earn interest on the deposited funds. The setup fee is non-refundable.</span>
         </div></div>
       </div>
 
@@ -610,88 +840,12 @@ footer p{color:#85B7EB;font-size:12px;}
           <span class="faq-icon">+</span>
         </div>
         <div class="faq-a"><div class="faq-a-inner">
-          <span class="es-only">Depende de lo establecido en el contrato de escrow. Las instrucciones firmadas por ambas partes definen qué pasa con el depósito: devolución, retención parcial como penalización, o permanencia en custodia hasta resolución. <strong>Titulamex ejecuta lo pactado, no decide el resultado.</strong></span>
-          <span class="en-only">It depends on what the escrow contract sets out. The instructions both parties sign define what happens to the deposit: refund, partial retention as a penalty, or continued hold until resolved. <strong>Titulamex executes what's been agreed; it doesn't decide the outcome.</strong></span>
+          <span class="es-only">Depende de lo establecido en el contrato de escrow. Las instrucciones firmadas por ambas partes definen qué pasa con el depósito: devolución, retención parcial como penalización, o permanencia en custodia hasta resolución. <strong>Titulamex ejecuta lo pactado, no decide el resultado.</strong> Las devoluciones se realizan exclusivamente a la cuenta bancaria de origen.</span>
+          <span class="en-only">It depends on what the escrow contract sets out. The instructions both parties sign define what happens to the deposit: refund, partial retention as a penalty, or continued hold until resolved. <strong>Titulamex executes what has been agreed; it does not decide the outcome.</strong> Refunds are issued exclusively to the original bank account of origin.</span>
         </div></div>
       </div>
-    </div>
-  </div>
-</div>
 
-<div class="ct-sec" id="contacto">
-  <div class="ct-wrap">
-    <p class="stag" style="text-align:center"><span class="es-only">Hablemos</span><span class="en-only">Let's talk</span></p>
-    <h2 class="stitle es-only" style="text-align:center">¿Listo para proteger tu operación?</h2>
-    <h2 class="stitle en-only" style="text-align:center">Ready to protect your deal?</h2>
-    <p class="slead es-only" style="margin:0 auto;text-align:center">Déjanos tus datos y te contactamos a la brevedad.</p>
-    <p class="slead en-only" style="margin:0 auto;text-align:center">Leave your details and we'll reach out shortly.</p>
-    <form class="ct-form" id="contact-form" onsubmit="handleSubmit(event)">
-      <div class="frow" style="margin-bottom:0">
-        <div class="fg">
-          <label class="es-only">Nombre completo</label><label class="en-only">Full name</label>
-          <input type="text" name="nombre" required>
-        </div>
-        <div class="fg">
-          <label>Email</label>
-          <input type="email" name="email" required>
-        </div>
-      </div>
-      <div class="frow" style="margin-bottom:0">
-        <div class="fg">
-          <label class="es-only">Teléfono / WhatsApp</label><label class="en-only">Phone / WhatsApp</label>
-          <input type="tel" name="telefono" required>
-        </div>
-        <div class="fg">
-          <label class="es-only">Tipo de operación</label><label class="en-only">Transaction type</label>
-          <select name="tipo" required>
-            <option value="" class="es-only">-- Selecciona --</option>
-            <option value="" class="en-only">-- Select --</option>
-            <option value="compraventa" class="es-only">Compraventa inmobiliaria</option>
-            <option value="compraventa" class="en-only">Real estate transaction</option>
-            <option value="extranjera" class="es-only">Comprador extranjero</option>
-            <option value="extranjera" class="en-only">Foreign buyer</option>
-            <option value="consulta" class="es-only">Consulta general</option>
-            <option value="consulta" class="en-only">General inquiry</option>
-          </select>
-        </div>
-      </div>
-      <div class="fg">
-        <label class="es-only">¿Cómo nos conociste?</label>
-        <label class="en-only">How did you hear about us?</label>
-        <select id="src-sel" name="fuente" onchange="toggleSrc()" required>
-          <option value="" class="es-only">-- Selecciona una opción --</option>
-          <option value="" class="en-only">-- Select an option --</option>
-          <option value="agencia" class="es-only">Agencia / broker inmobiliario</option>
-          <option value="agencia" class="en-only">Agency / real estate broker</option>
-          <option value="instagram">Instagram</option>
-          <option value="google">Google</option>
-          <option value="recomendacion" class="es-only">Recomendación personal</option>
-          <option value="recomendacion" class="en-only">Personal referral</option>
-          <option value="linkedin">LinkedIn</option>
-          <option value="otro" class="es-only">Otro</option>
-          <option value="otro" class="en-only">Other</option>
-        </select>
-      </div>
-      <div class="fg" id="src-name-row" style="display:none">
-        <label class="es-only">Nombre de la agencia o broker</label>
-        <label class="en-only">Agency or broker name</label>
-        <input type="text" name="agencia">
-      </div>
-      <div class="fg" id="src-other-row" style="display:none">
-        <label class="es-only">¿Dónde nos conociste?</label>
-        <label class="en-only">Where did you find us?</label>
-        <input type="text" name="otro">
-      </div>
-      <div class="fg">
-        <label class="es-only">Cuéntanos sobre tu operación</label>
-        <label class="en-only">Tell us about your deal</label>
-        <textarea name="mensaje" required></textarea>
-      </div>
-      <button type="submit" class="btn-submit">
-        <span class="es-only">Enviar consulta</span><span class="en-only">Send inquiry</span>
-      </button>
-      <div class="form-msg" id="form-msg"></div>
-    </form>
+    </div>
   </div>
 </div>
 
@@ -708,23 +862,21 @@ footer p{color:#85B7EB;font-size:12px;}
       We are not a notary public, law firm, financial advisor, or banking institution. We do not charge interest on funds in custody, and we do not arbitrate disputes between parties. Our role is limited to the custody and administration of funds per the instructions signed by buyer and seller.
     </p>
     <p class="legal-p es-only">
-      El servicio opera conforme a los <strong>Artículos 273 a 308 del Código de Comercio</strong> de México. Todas las condiciones específicas, plazos y honorarios se detallan en el contrato de escrow firmado entre las partes antes del depósito. Cualquier disputa deberá resolverse por mediación, arbitraje o vía judicial entre las partes — los fondos permanecen en custodia hasta que exista resolución o acuerdo escrito.
+      Sólo se aceptan fondos provenientes de la cuenta bancaria declarada durante el proceso KYC, cuyo titular debe coincidir con el cliente. Las devoluciones se realizan exclusivamente a esa misma cuenta de origen. El fee de apertura no es reembolsable. Todas las condiciones específicas, plazos y honorarios se detallan en el contrato de escrow firmado entre las partes antes del depósito. Las estadísticas mostradas provienen de fuentes públicas (PROFECO, CONDUSEF, Secretaría de Economía, NAR, estimados del sector) con fines informativos y no constituyen promesa o garantía de resultado.
     </p>
     <p class="legal-p en-only">
-      The service operates under <strong>Articles 273 through 308 of Mexico's Commercial Code</strong>. All specific terms, timelines, and fees are detailed in the escrow contract signed by the parties before any deposit. Any dispute must be resolved through mediation, arbitration, or the courts between the parties — funds remain in custody until resolution or written agreement is reached.
-    </p>
-    <p class="legal-p es-only">
-      Las estadísticas mostradas en esta página provienen de fuentes públicas (PROFECO, CONDUSEF, estimados del sector) y se presentan con fines informativos sobre el contexto del mercado inmobiliario mexicano. No constituyen promesa o garantía de resultado en ninguna operación particular.
-    </p>
-    <p class="legal-p en-only">
-      The statistics shown on this page come from public sources (PROFECO, CONDUSEF, industry estimates) and are presented for informational purposes about the Mexican real estate market. They do not constitute a promise or guarantee of outcome for any particular transaction.
+      We only accept funds from the bank account declared during KYC, whose holder must match the client. Refunds are issued exclusively to that same account of origin. The setup fee is non-refundable. All specific terms, timelines, and fees are detailed in the escrow contract signed by the parties before any deposit. Statistics shown come from public sources (PROFECO, CONDUSEF, Mexican Ministry of Economy, NAR, industry estimates) for informational purposes and do not constitute a promise or guarantee of outcome.
     </p>
   </div>
 </div>
 
 <footer>
-  <p class="ft-brand">Titulamex</p>
+  <div class="ft-logo">
+    <img src="data:image/png;base64,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" alt="Titulamex">
+    <span class="ft-brand">TITULAMEX</span>
+  </div>
   <p class="ft-sub"><span class="es-only">Servicio de escrow · México</span><span class="en-only">Escrow service · Mexico</span></p>
+  <p class="ft-contact"><a href="mailto:info@titulamex.com">info@titulamex.com</a></p>
   <p>© 2025 Titulamex. <span class="es-only">Todos los derechos reservados.</span><span class="en-only">All rights reserved.</span></p>
 </footer>
 
@@ -732,63 +884,127 @@ footer p{color:#85B7EB;font-size:12px;}
 
 <script>
 function setLang(l){
-  document.getElementById('root').setAttribute('data-lang', l);
-  document.documentElement.setAttribute('lang', l);
-  document.querySelectorAll('.lang-btn').forEach(function(b){
-    b.classList.toggle('active', b.textContent.toLowerCase() === l);
+  document.getElementById("root").setAttribute("data-lang", l);
+  document.documentElement.setAttribute("lang", l);
+  document.querySelectorAll(".lang-btn").forEach(function(b){
+    b.classList.toggle("active", b.textContent.toLowerCase() === l);
   });
   toggleSrc();
+  updatePhoneHelp();
 }
 
 function toggleSrc(){
-  var v = document.getElementById('src-sel').value;
-  document.getElementById('src-name-row').style.display = (v === 'agencia') ? 'flex' : 'none';
-  document.getElementById('src-other-row').style.display = (v === 'otro') ? 'flex' : 'none';
+  var v = document.getElementById("src-sel").value;
+  var isAgency = v === "Agencia/broker" || v === "Agency/broker";
+  var isOther = v === "Otro" || v === "Other";
+  document.getElementById("src-name-row").style.display = isAgency ? "flex" : "none";
+  document.getElementById("src-other-row").style.display = isOther ? "flex" : "none";
 }
 
 function toggleFaq(el){
-  el.classList.toggle('open');
+  el.classList.toggle("open");
 }
 
 function scrollToTop(){
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
-function handleSubmit(e){
-  e.preventDefault();
+function updatePhoneHelp(){
+  var sel = document.getElementById("country-code");
+  var opt = sel.options[sel.selectedIndex];
+  var len = opt.getAttribute("data-len") || "10";
+  var helpEs = document.getElementById("phone-help");
+  var lang = document.getElementById("root").getAttribute("data-lang");
+  var phoneInput = document.getElementById("phone-input");
+  phoneInput.setAttribute("maxlength", len);
+  if(lang === "es"){
+    helpEs.textContent = len + " dígitos · Sólo números";
+  }
+}
+
+document.getElementById("country-code").addEventListener("change", updatePhoneHelp);
+
+document.getElementById("phone-input").addEventListener("input", function(e){
+  this.value = this.value.replace(/[^0-9]/g, "");
+});
+document.getElementById("phone-input").addEventListener("keypress", function(e){
+  if(!/[0-9]/.test(e.key) && e.key !== "Backspace" && e.key !== "Delete" && e.key !== "Tab"){
+    e.preventDefault();
+  }
+});
+
+document.getElementById("contact-form").addEventListener("submit", function(e){
   var form = e.target;
-  var msg = document.getElementById('form-msg');
-  var lang = document.getElementById('root').getAttribute('data-lang');
+  var lang = document.getElementById("root").getAttribute("data-lang");
 
-  var data = new FormData(form);
-  var body = '';
-  data.forEach(function(v, k){
-    if(v) body += k + ': ' + v + '%0A';
-  });
+  var nombre = form.Nombre.value.trim();
+  if(nombre.length < 3){
+    e.preventDefault();
+    alert(lang === "es" ? "El nombre debe tener al menos 3 caracteres." : "Name must have at least 3 characters.");
+    form.Nombre.focus();
+    return false;
+  }
 
-  var subject = lang === 'es' ? 'Nueva consulta desde Titulamex.com' : 'New inquiry from Titulamex.com';
-  var mailto = 'mailto:contacto@titulamex.com?subject=' + encodeURIComponent(subject) + '&body=' + body;
+  var email = form.Email.value.trim();
+  var emailRe = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  if(!emailRe.test(email)){
+    e.preventDefault();
+    alert(lang === "es" ? "Ingresa un correo electrónico válido." : "Please enter a valid email address.");
+    form.Email.focus();
+    return false;
+  }
 
-  window.location.href = mailto;
+  var phone = form.Telefono.value.trim();
+  var sel = document.getElementById("country-code");
+  var expectedLen = parseInt(sel.options[sel.selectedIndex].getAttribute("data-len"));
+  if(!/^[0-9]+$/.test(phone)){
+    e.preventDefault();
+    alert(lang === "es" ? "El teléfono sólo puede contener números." : "Phone must only contain numbers.");
+    form.Telefono.focus();
+    return false;
+  }
+  if(phone.length < expectedLen - 1 || phone.length > expectedLen){
+    e.preventDefault();
+    alert(lang === "es"
+      ? "El teléfono debe tener " + expectedLen + " dígitos para el país seleccionado."
+      : "Phone must have " + expectedLen + " digits for the selected country.");
+    form.Telefono.focus();
+    return false;
+  }
 
-  msg.className = 'form-msg success';
-  msg.textContent = lang === 'es'
-    ? '¡Gracias! Abrimos tu correo para enviar la consulta. Si no se abrió, escríbenos a contacto@titulamex.com'
-    : 'Thanks! We opened your email to send the inquiry. If it did not open, email us at contacto@titulamex.com';
+  if(!form.Tipo_Operacion.value){
+    e.preventDefault();
+    alert(lang === "es" ? "Selecciona el tipo de operación." : "Please select transaction type.");
+    form.Tipo_Operacion.focus();
+    return false;
+  }
 
-  setTimeout(function(){ form.reset(); toggleSrc(); }, 500);
-}
+  if(!form.Fuente.value){
+    e.preventDefault();
+    alert(lang === "es" ? "Indica cómo nos conociste." : "Please tell us how you heard about us.");
+    form.Fuente.focus();
+    return false;
+  }
+
+  return true;
+});
 
 document.querySelectorAll('a[href^="#"]').forEach(function(a){
-  a.addEventListener('click', function(e){
-    var href = a.getAttribute('href');
+  a.addEventListener("click", function(e){
+    var href = a.getAttribute("href");
     if(href.length > 1){
       e.preventDefault();
       var el = document.querySelector(href);
-      if(el) el.scrollIntoView({ behavior: 'smooth' });
+      if(el) el.scrollIntoView({ behavior: "smooth" });
     }
   });
 });
+
+if (window.location.search.indexOf("sent=1") > -1) {
+  alert("¡Gracias! Recibimos tu consulta y te contactaremos pronto.");
+}
+
+updatePhoneHelp();
 </script>
 </body>
 </html>
